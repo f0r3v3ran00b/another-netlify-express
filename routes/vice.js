@@ -4,7 +4,7 @@ var moment = require('moment')
 const name = process.env.MY_NAME || `[Name not set in environment variables]`
 
 const router = express.Router();
-router.get('/vice', (req, res) => {
+router.get('/', (req, res) => {
   res.writeHead(200, {
     'Content-Type': 'text/html'
   });
