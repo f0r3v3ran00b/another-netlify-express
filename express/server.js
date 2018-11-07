@@ -8,9 +8,9 @@ var viceRouter = require('../routes/vice');
 const app = express();
 const bodyParser = require('body-parser');
 
-
-app.use('/', indexRouter);
-app.use('/vice', viceRouter);
+var routerToUse = indexRouter;
+// var routerToUse = viceRouter;
+app.use('/', routerToUse);
 app.use(bodyParser.json());
 app.use('/.netlify/functions/server', indexRouter); // path must route to lambda
 
