@@ -13,7 +13,7 @@ var routerToUse = indexRouter;
 
 app.use('/', routerToUse);
 app.use(bodyParser.json());
-app.use('/.netlify/functions/server', routerToUse); // path must route to lambda
+//app.use('/.netlify/functions/server', routerToUse); // path must route to lambda
 app.use('/.netlify/functions/viceserver', viceRouter); // path must route to lambda
 
 module.exports = app;
