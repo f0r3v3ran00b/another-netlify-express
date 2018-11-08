@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
   res.writeHead(200, {
     'Content-Type': 'text/html'
   });
-  res.write('<h1>Hello from Express.js!!!!</h1>');
+  res.write('<h1>Hi from Express.js!!!!</h1>');
   res.end();
 });
 
@@ -16,7 +16,7 @@ router.get('/hola', (req, res) => {
   res.writeHead(200, {
     'Content-Type': 'text/html'
   });
-  res.write('<h1>Hola!</h1>');
+  res.write('<h1>Hola amigo!</h1>');
   res.end();
 });
 
